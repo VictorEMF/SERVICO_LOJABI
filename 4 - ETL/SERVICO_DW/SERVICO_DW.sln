@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SERVICO_DW", "SERVICO_DW\SERVICO_DW.dtproj", "{74A64405-0A61-4960-A04D-CD454587D349}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74A64405-0A61-4960-A04D-CD454587D349}.Development|Default.ActiveCfg = Development
+		{74A64405-0A61-4960-A04D-CD454587D349}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C104DFF-FDF3-484F-841D-3BABEBC6C8CB}
+	EndGlobalSection
+EndGlobal
