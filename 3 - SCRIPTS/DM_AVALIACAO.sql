@@ -1,0 +1,41 @@
+BEGIN;
+MERGE INTO public.dm_avaliacao da
+USING
+	(
+		SELECT DISTINCT 
+					ID_AVALIACAO,
+					AVALIACAO
+		from dblink('host=localhost user=postgres password=postgres dbname=lojabi',
+		$$
+			SELECT 	
+					ID_AVALIACAO,
+					AVALIACAO
+		FROM avaliacao
+		$$) AS avaliacao
+					(ID_AVALIACAO INT,
+					AVALIACAO VARCHAR(50))
+		ORDER BY 1
+	) MERGE_SUBQUERY
+ON (
+		da.NK_ID_AVALIACAO = MERGE_SUBQUERY.ID_AVALIACAO
+	)
+WHEN NOT MATCHED THEN 
+
+INSERT 
+		(
+			NK_ID_AVALIACAO,
+			AVALIACAO
+		)
+VALUES 
+		(
+			MERGE_SUBQUERY.ID_AVALIACAO,
+			MERGE_SUBQUERY.AVALIACAO
+		)
+WHEN MATCHED THEN 
+
+UPDATE SET 
+			NK_ID_AVALIACAO 	=	MERGE_SUBQUERY.ID_AVALIACAO,
+			AVALIACAO			=	MERGE_SUBQUERY.AVALIACAO,
+			DADO_VERSAO				=	DADO_VERSAO + 1,
+			DATA_ULTIMO_DADO		=	current_timestamp;
+COMMIT;
