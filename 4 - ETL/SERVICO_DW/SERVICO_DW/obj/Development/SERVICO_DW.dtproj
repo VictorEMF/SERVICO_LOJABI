@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-7HCKLMT</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArC0OLjdrBkeot0qoIpL4JAAAAAACAAAAAAAQZgAAAAEAACAAAAA07asMG2LPX0h1dqW0MEk14mDEUxAxtjuCYduPOq4XLQAAAAAOgAAAAAIAACAAAADN2h9FfT3ck7QsCtoPWQ+NX+KbnlgnImwciYySjLavS5AAAAB4ZKbHd7pPY8+JR1dzFVOPfpq+GjLbbaIQWzE6dVJROFTZmd4VVJvlfZ4rsM4tZHerK8ZKOFbzHL095fXkhuesRh+RbUt8S3NzIiWRvrvOgfS3PWZrfnahp+8SIwZlkh0SM/vUhUuuu0sJLJ/B5Q3ZmZKY50hJyxt5dVqa5SeM5/XQkZ8w4VqMU4nQwCdYEltAAAAAJkw53C6xJdmTUj1ZuPLx/cUnmfUiAS04AL4AKFzVp25dYrlodAA5tPutMawS8ZiMYFgJVFLDvYS8ZPHA7zgUPg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArC0OLjdrBkeot0qoIpL4JAAAAAACAAAAAAAQZgAAAAEAACAAAABAX+tMY+oCOmx8ZcEm7q+Rg3VZzEmRzXSLWaOJdSzUlwAAAAAOgAAAAAIAACAAAABiuf9zi7+C8fSgUes6uMFyp/06GfZT/cdISHiT2363fJAAAAD6mt5s0a6lzQUy7YwXoC6JsTKIJC4ADPdMrISgoW+DBVXIofOfTLeZjsSDCDDEfaF8ajQHS4QytbOtMZAVUYZpsvkTYAC6qTTiKvuvNy+Dx0v9MSLgCxBswsHE0h0a483hzeUFT5oZLSiHxPU1+bYIn2BJwX22RzMcDt0vkG+8dhNHFEiFaRJRsS6I/Xxv5G5AAAAAQauiy3qhKuS3DVjL5L8kkqpXvZaUCQBsDBTGI2xFZvNr/DJIyQMGKjOpd2IlZejMcy+O1SCWOWA2wMOCnWrqiw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -328,13 +328,7 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues>
-          <ConfigurationSetting>
-            <Id>LastModifiedTime</Id>
-            <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2023-07-10T09:41:06.9542505Z</Value>
-          </ConfigurationSetting>
-        </ParameterConfigurationValues>
+        <ParameterConfigurationValues />
       </Options>
     </Configuration>
   </Configurations>
