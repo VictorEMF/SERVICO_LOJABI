@@ -26,45 +26,28 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-7HCKLMT</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArC0OLjdrBkeot0qoIpL4JAAAAAACAAAAAAAQZgAAAAEAACAAAABHCKgLrtHo5pI3R3q7RfvkVLINDJfVcKKozYGbW/BfdAAAAAAOgAAAAAIAACAAAAA0uBiQkvhp9k1zFTTqlC5F5FFqF60LdT/EHZrFxXFTAZAAAAALqRRM+gkBjBpuhzEE9THuInX4ux5I4DGNAO6TyJhgTdzVkm6zyAruejuYhdoIAENyD4+X+ZRr8tDGpVS0U7OVteyA08oqm1fY3o0xsJBKopRxdxVORpPJ1rk6Zi1M3UmQSg+xDMNMpn9nPGc6xYL3b/VXam42V95BZgS90YIzdx4/7E+oZM9HcIOBdoVX+nhAAAAAPSt8GLqJb60p80vxKtKrz5p4HyBR+4IFSXV/yuuC+ZfXWX+4dUvucVTSrFn+usRZEVSU7sAmf0CAoesysxQoaQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAryOXuf2gF0WEqEHqH/9FFQAAAAACAAAAAAAQZgAAAAEAACAAAAB6/ihgGy+ppunCOdr3VVJxumXY84ifjljKdBdul5pSFgAAAAAOgAAAAAIAACAAAAD5cWJ8614DNFAjo7YtcOUVfoVT9Hhjzw/J1075n48H3ZAAAADC355bSW/oc9fVrGk6kDskZ+enWWxF5uTUC1D9Sl6kQx/41MHMw4+moyak3fX8HTh/JeBOW51oLNISWVSw+GFd0u6Tyv+bJySP+pTK9ipvxYhEvlSo1mk/L9GtqoentHZMNPhJ5v1/lblCnYHKEyEfmmQFG92gHfJol5X7ZPP6AOsDNA53elWQd1DTbFvkw/lAAAAA2F8t1qdPkHhDTVMQmOa8iDLXEuflR+gGE3lEHGJQPuGv5TR3pLXGmLfDUQUpk4tu1l+4pce4OyrbWmNyCvQIoA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="00_PROJETO_CHAMADO.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="01_CONVERSAO_RESERVA.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="ORQ_EXECULTAR_SERVICO.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{6C6BEE48-806D-40F4-A66B-D5E50A53A911}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6DDB25BA-BF22-4DC2-8997-D7DCBBDF05EE}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="00_PROJETO_CHAMADO.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{5F7BC867-7FBF-456D-AC07-55F11C6667F2}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">00_PROJETO_CHAMADO</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{748ED7CA-8279-4B5F-9CD5-5E12749918F6}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{09096E79-7EA2-4C8E-88A2-4DA719E76F72}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -528,6 +511,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="ORQ_EXECULTAR_SERVICO.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{6C6BEE48-806D-40F4-A66B-D5E50A53A911}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2B74DDC5-703C-4EB6-8CBA-AF77294EA2A0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>

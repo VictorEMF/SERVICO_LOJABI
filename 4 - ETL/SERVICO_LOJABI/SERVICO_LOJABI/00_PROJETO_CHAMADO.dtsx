@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/14/2023 5:29:49 AM"
@@ -12,8 +12,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="00_PROJETO_CHAMADO"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{748ED7CA-8279-4B5F-9CD5-5E12749918F6}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{09096E79-7EA2-4C8E-88A2-4DA719E76F72}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -58,12 +58,34 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArC0OLjdrBkeot0qoIpL4JAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAlGWGx9WBseEM2+Hg0GWCqrozNui5dkYnHHw1qetUa6QAAAAAOgAAAAAIAACAAAAANNLRJ9P5tn+ZgkRZe4Y3m7a3LEU5xs4mkEdNlC2E7ACAAAAAeM5VaMk+XIBmGNbDQch4pcHKIYw0m+lYnREbDRwn/Z0AAAABt7rnLUQQ6/X9wE6PtlocHHxBDYyFuLSd7buTmTPcruG+OS3MyMMDwDUJBPF9PwyO9J9xX4acHtxdlkaHysuLH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAryOXuf2gF0WEqEHqH/9FFQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADWb8FUapzxYfTHqKbpFHuzfBnYRsl3AsJQAPb3UoiMnQAAAAAOgAAAAAIAACAAAAAJcSdBm1Yx/7WbnvPYy7+3h4Lve0QiJ7hqGt7xPx3O9yAAAAAkfcv0hSKto1ufocagf0ropF0ANdrTdtu09DU58+uDU0AAAADZmOohabHzbtOA6deYZJc9vReuEw8Uv1i8P/D0US3c/QuQcrQ4AarHLx4Tt4S857HO/hdSwn1ojMYbYQ7cjSBr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{670DC7EB-D606-4551-A500-E9DDBAADCE78}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::PASTA_PROCESSADOS]  +   REPLACE( @[User::NOME_ARQUIVO]  , &quot;.&quot;,  @[User::DATA_SISTEMA]  )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ARQUIVO_PROCESSADO">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\victo\OneDrive\Área de Trabalho\SERVICO_LOJABI\1 - ARQUIVOS\Processados\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0F07A468-622A-4851-A99C-B6ED198F6BF3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;_&quot; + (DT_WSTR,4)YEAR(GETDATE()) + RIGHT(&quot;0&quot; + (DT_WSTR,2)MONTH(GETDATE()), 2) + RIGHT(&quot;0&quot; + (DT_WSTR,2)DAY( GETDATE()), 2) + &quot;.xls&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DATA_SISTEMA">
+      <DTS:VariableValue
+        DTS:DataType="8">_20230713.xls</DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{D390B9FA-3E87-4863-94A4-DF46C832DBFA}"
@@ -72,6 +94,27 @@
       DTS:ObjectName="INDICE">
       <DTS:VariableValue
         DTS:DataType="8">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0772C3C6-F3B0-4918-9AD6-A82D5AD37C1C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="SUBSTRING(   @[User::INDICE]  , FINDSTRING( @[User::INDICE]   ,&quot;\\&quot;, 7 ) + 1, FINDSTRING(  @[User::INDICE]    ,&quot;.&quot;, 1 ) - FINDSTRING(   @[User::INDICE]   ,&quot;\\&quot;, 7 )  )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="NOME_ARQUIVO">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BCB441D4-3DA7-4825-82CE-103295967F15}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PASTA_PROCESSADOS">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\victo\OneDrive\Área de Trabalho\SERVICO_LOJABI\1 - ARQUIVOS\Processados\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -121,6 +164,27 @@
       </DTS:ForEachEnumerator>
       <DTS:Variables />
       <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contêiner do Loop Foreach\MOVER_PROJETO_PROCESSADO"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="MOVER_PROJETO_PROCESSADO"
+          DTS:DTSID="{7D638AC4-26E2-457B-8DB7-9BBDDC19C6E8}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="MOVER_PROJETO_PROCESSADO"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::INDICE"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::ARQUIVO_PROCESSADO"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Contêiner do Loop Foreach\Tarefa Fluxo de Dados 1"
           DTS:CreationName="Microsoft.Pipeline"
@@ -825,6 +889,16 @@
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Contêiner do Loop Foreach.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{A524A9EE-6099-4566-9EB7-61716027C779}"
+          DTS:From="Package\Contêiner do Loop Foreach\Tarefa Fluxo de Dados 1"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Contêiner do Loop Foreach\MOVER_PROJETO_PROCESSADO" />
+      </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
@@ -863,6 +937,27 @@
       </DTS:ForEachEnumerator>
       <DTS:Variables />
       <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contêiner do Loop Foreach 1\MOVER_CHAMADO_PROCESSADO"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="MOVER_CHAMADO_PROCESSADO"
+          DTS:DTSID="{632f57cc-9b3c-40cd-8b6a-106a75349e52}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="MOVER_CHAMADO_PROCESSADO"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::INDICE"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::ARQUIVO_PROCESSADO"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1"
           DTS:CreationName="Microsoft.Pipeline"
@@ -1572,6 +1667,16 @@
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Contêiner do Loop Foreach 1.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{ABF838E5-05CD-45B3-8BD0-74F812B3E187}"
+          DTS:From="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Contêiner do Loop Foreach 1\MOVER_CHAMADO_PROCESSADO" />
+      </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
@@ -1603,43 +1708,95 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="200,42"
           Id="Package\Contêiner do Loop Foreach\Tarefa Fluxo de Dados 1"
           TopLeft="86,42" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="366,144"
-          Size="366,187"
-          Id="Package\Contêiner do Loop Foreach"
-          TopLeft="21,14" />
         <NodeLayout
-          Size="200,42"
-          Id="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1"
-          TopLeft="64,39" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="352,138"
-          Size="352,181"
-          Id="Package\Contêiner do Loop Foreach 1"
-          TopLeft="432,21" />
+          Size="261,42"
+          Id="Package\Contêiner do Loop Foreach\MOVER_PROJETO_PROCESSADO"
+          TopLeft="54,125" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="387,109.5">
+          Id="Package\Contêiner do Loop Foreach.PrecedenceConstraints[Constraint]"
+          TopLeft="185,84">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="45,0"
+              EndConnector="0,41"
               Start="0,0"
-              End="37.5,0">
+              End="0,33.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="37.5,0" />
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="366,225"
+          Size="366,268"
+          Id="Package\Contêiner do Loop Foreach"
+          TopLeft="14,100" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1"
+          TopLeft="64,39" />
+        <NodeLayout
+          Size="265,42"
+          Id="Package\Contêiner do Loop Foreach 1\MOVER_CHAMADO_PROCESSADO"
+          TopLeft="36,128" />
+        <EdgeLayout
+          Id="Package\Contêiner do Loop Foreach 1.PrecedenceConstraints[Constraint]"
+          TopLeft="166.25,81">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="352,225"
+          Size="352,268"
+          Id="Package\Contêiner do Loop Foreach 1"
+          TopLeft="432,96" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="380,232">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="52,0"
+              Start="0,0"
+              End="44.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="44.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
