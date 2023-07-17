@@ -12,8 +12,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="00_PROJETO_CHAMADO"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{09096E79-7EA2-4C8E-88A2-4DA719E76F72}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{CCF0D1D7-59A1-4A8C-AA7C-20EEE7C988DA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -58,7 +58,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAryOXuf2gF0WEqEHqH/9FFQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADWb8FUapzxYfTHqKbpFHuzfBnYRsl3AsJQAPb3UoiMnQAAAAAOgAAAAAIAACAAAAAJcSdBm1Yx/7WbnvPYy7+3h4Lve0QiJ7hqGt7xPx3O9yAAAAAkfcv0hSKto1ufocagf0ropF0ANdrTdtu09DU58+uDU0AAAADZmOohabHzbtOA6deYZJc9vReuEw8Uv1i8P/D0US3c/QuQcrQ4AarHLx4Tt4S857HO/hdSwn1ojMYbYQ7cjSBr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAryOXuf2gF0WEqEHqH/9FFQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAIXX8rmHjXWKGrNCnObEV/SUNiUoGWU1cFSNpMUFnIogAAAAAOgAAAAAIAACAAAACgr30t4TwBKXMOFaBdCgKm2OPbkabs3Rv6peGbBhBAiiAAAAAblmSPG21L4TiXfiVzINVznWX+OrqYENQU9fOQalzvVEAAAAAqtTp1hle+2PtRIcB2p/SPhqlvlapxbPYi4vwtWuANZj/n24lkZLR5FZn1IPg9Odf2IRTT8/auV/5YmiLzu9RB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -84,7 +84,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="DATA_SISTEMA">
       <DTS:VariableValue
-        DTS:DataType="8">_20230713.xls</DTS:VariableValue>
+        DTS:DataType="8">_20230716.xls</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -140,7 +140,6 @@
       DTS:refId="Package\Contêiner do Loop Foreach"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Contêiner do Loop Foreach"
-      DTS:Disabled="True"
       DTS:DTSID="{E19C7CB9-4EA9-4356-930F-27FC86AA2428}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -913,7 +912,6 @@
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:DelayValidation="True"
       DTS:Description="Contêiner do Loop Foreach"
-      DTS:Disabled="True"
       DTS:DTSID="{C85E019F-2C15-4EDA-92B7-1CC35640F8C1}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -1710,13 +1708,13 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="200,42"
-          Id="Package\Contêiner do Loop Foreach\Tarefa Fluxo de Dados 1"
-          TopLeft="86,42" />
-        <NodeLayout
           Size="261,42"
           Id="Package\Contêiner do Loop Foreach\MOVER_PROJETO_PROCESSADO"
           TopLeft="54,125" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Contêiner do Loop Foreach\Tarefa Fluxo de Dados 1"
+          TopLeft="86,42" />
         <EdgeLayout
           Id="Package\Contêiner do Loop Foreach.PrecedenceConstraints[Constraint]"
           TopLeft="185,84">
@@ -1745,15 +1743,15 @@
           PanelSize="366,225"
           Size="366,268"
           Id="Package\Contêiner do Loop Foreach"
-          TopLeft="14,100" />
-        <NodeLayout
-          Size="200,42"
-          Id="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1"
-          TopLeft="64,39" />
+          TopLeft="13,19" />
         <NodeLayout
           Size="265,42"
           Id="Package\Contêiner do Loop Foreach 1\MOVER_CHAMADO_PROCESSADO"
           TopLeft="36,128" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1"
+          TopLeft="64,39" />
         <EdgeLayout
           Id="Package\Contêiner do Loop Foreach 1.PrecedenceConstraints[Constraint]"
           TopLeft="166.25,81">
@@ -1782,10 +1780,10 @@
           PanelSize="352,225"
           Size="352,268"
           Id="Package\Contêiner do Loop Foreach 1"
-          TopLeft="432,96" />
+          TopLeft="431,15" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="380,232">
+          TopLeft="379,151">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1928,7 +1926,7 @@
     design-time-name="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="160,42"
           Id="Package\Contêiner do Loop Foreach 1\Tarefa Fluxo de Dados 1\Origem do Excel"
@@ -1964,9 +1962,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1988,9 +1984,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2012,9 +2006,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

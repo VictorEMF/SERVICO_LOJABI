@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="7/6/2023 2:04:24 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="01_CONVERSAO_RESERVA"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{87F2A980-A982-44E5-973E-2CB4390C4FE0}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{33AE99C1-FEEC-46D4-BE47-B8F2BB9495C3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArC0OLjdrBkeot0qoIpL4JAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD7JxvDLCI+d/XeAWs1rn6GWSGxWo0/ZbyHE8LQrCy4LwAAAAAOgAAAAAIAACAAAABXgr/Ov83ZnUekEBD+iSxgkthwA9kMBG14bvIOBv1TMyAAAACYVD1w2sczj5u0meAnekzZBE84aktikLZ09piFC1z850AAAADu33ZKn8bSMaFzLhQRAPQREzA/0bG8uJ7rhrvuN8lbCQCpwu4q19WyQE3/W7rhi8XBfOb3Wj7y7IhCuieayxd9</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAryOXuf2gF0WEqEHqH/9FFQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSBKXZeWs+qXoHBxkmocHbVGuuMC1lvNcXdHllzyuuBAAAAAAOgAAAAAIAACAAAAAMqiboT6FsLTgG2jLbbDlg3DU5I9ktgY5PB+gf49Rj1yAAAAAiIEpVl7XLPXXHwu2Oe0O5w0PJL9Hl1+lSTm2q7owh40AAAAAyAeHZEZ+R6NLVxHdGupp7K/hdMl3HAaTioYEmMAA0+Fsd4DAo9u2UHw7RVSdWc0jM2/IqBiolToKWaHNLYkEg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -74,63 +74,63 @@
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[id_atividade]"
                       cachedDataType="i4"
                       cachedName="id_atividade"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_atividade]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_atividade]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[id_responsavel]"
                       cachedDataType="i4"
                       cachedName="id_responsavel"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_responsavel]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_responsavel]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[id_solicitante]"
                       cachedDataType="i4"
                       cachedName="id_solicitante"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_solicitante]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_solicitante]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[id_loja]"
                       cachedDataType="i4"
                       cachedName="id_loja"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_loja]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_loja]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[id_avaliacao]"
                       cachedDataType="i4"
                       cachedName="id_avaliacao"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[descricao]"
                       cachedDataType="wstr"
                       cachedLength="1500"
                       cachedName="descricao"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[descricao]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[descricao]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[tipo]"
                       cachedDataType="wstr"
                       cachedLength="7"
                       cachedName="tipo"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[tipo]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[tipo]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[data_inicio]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="data_inicio"
                       cachedScale="6"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_inicio]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_inicio]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[data_previsao]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="data_previsao"
                       cachedScale="6"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_previsao]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_previsao]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[data_finalizacao]"
                       cachedDataType="dbTimeStamp2"
                       cachedName="data_finalizacao"
                       cachedScale="6"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]" />
                     <inputColumn
                       refId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[atraso]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="atraso"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[atraso]" />
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[atraso]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -157,7 +157,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_atividade]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_atividade]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -177,7 +177,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_responsavel]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_responsavel]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -197,7 +197,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_solicitante]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_solicitante]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -217,7 +217,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_loja]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_loja]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -237,7 +237,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -258,7 +258,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[descricao]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[descricao]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -279,7 +279,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[tipo]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[tipo]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -300,7 +300,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_inicio]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_inicio]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -321,7 +321,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_previsao]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_previsao]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -342,7 +342,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -363,7 +363,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
-                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[atraso]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[atraso]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
@@ -398,153 +398,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC"
-              componentClassID="Microsoft.SSISODBCDst"
-              contactInfo="Destino ODBC;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
-              description="Destino ODBC"
-              name="Destino ODBC"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="O nome da tabela a ser procurada."
-                  expressionType="Notify"
-                  name="TableName">"public"."servico"</property>
-                <property
-                  dataType="System.Int32"
-                  description="Especifique o número de linhas buscado por lote."
-                  expressionType="Notify"
-                  name="BatchSize">1000</property>
-                <property
-                  dataType="System.Int32"
-                  description="O número de linhas inseridas na mesma transação."
-                  expressionType="Notify"
-                  name="TransactionSize">1000</property>
-                <property
-                  dataType="System.Int32"
-                  description="Determina a alocação de tamanho de parte de colunas LOB"
-                  expressionType="Notify"
-                  name="LobChunkSize">32768</property>
-                <property
-                  dataType="System.Int32"
-                  description="O número de segundos para aguardar pela execução de uma instrução SQL antes de retornar ao aplicativo."
-                  expressionType="Notify"
-                  name="StatementTimeout">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Especifica a página de código a ser usada quando não há informações de página de código disponíveis na fonte de dados."
-                  expressionType="Notify"
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Int32"
-                  description="O método usado para inserir dados. Os valores possíveis são 'Linha por linha' ou 'Lote'."
-                  expressionType="Notify"
-                  name="InsertMethod">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="O tipo de dados ODBC C para associação de dados numéricos."
-                  expressionType="Notify"
-                  name="BindNumericAs">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Determina como o componente associaria colunas de tipos de cadeia de caracteres (multi-)byte (ou seja, SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). As opções são: Unicode (SQL_C_WCHAR) e ANSI (SQL_C_CHAR)."
-                  expressionType="Notify"
-                  name="BindCharColumnsAs">0</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Connections[ODBCConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LojaBI.postgres]"
-                  connectionManagerRefId="Package.ConnectionManagers[LojaBI.postgres]"
-                  description="A conexão de tempo de execução ODBC usada para acessar o banco de dados."
-                  name="ODBCConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC]"
-                  errorOrTruncationOperation="Inserir"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="Entrada de Destino do ODBC"
-                  truncationRowDisposition="FailComponent">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].Columns[id_atividade]"
-                      cachedDataType="i4"
-                      cachedName="id_atividade"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_atividade]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_atividade]" />
-                    <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].Columns[id_loja]"
-                      cachedDataType="i4"
-                      cachedName="id_loja"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_loja]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_loja]" />
-                    <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].Columns[id_avaliacao]"
-                      cachedDataType="i4"
-                      cachedName="id_avaliacao"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_avaliacao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_servico]"
-                      dataType="i4"
-                      name="id_servico" />
-                    <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_atividade]"
-                      dataType="i4"
-                      name="id_atividade" />
-                    <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_avaliacao]"
-                      dataType="i4"
-                      name="id_avaliacao" />
-                    <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_loja]"
-                      dataType="i4"
-                      name="id_loja" />
-                    <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC].ExternalColumns[setor_solicitante]"
-                      dataType="wstr"
-                      length="50"
-                      name="setor_solicitante" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Outputs[Saída de Erro de Destino do ODBC]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Saída de Erro de Destino do ODBC"
-                  synchronousInputId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC"
+              refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA"
               componentClassID="Microsoft.SSISODBCSrc"
               contactInfo="Fonte ODBC;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
               description="Fonte ODBC"
-              name="Fonte ODBC"
+              name="TABELA_RESERVA"
               usesDispositions="true"
               version="1">
               <properties>
@@ -608,7 +466,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Connections[ODBCConnection]"
+                  refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Connections[ODBCConnection]"
                   connectionManagerID="Package.ConnectionManagers[LojaBI.postgres]"
                   connectionManagerRefId="Package.ConnectionManagers[LojaBI.postgres]"
                   description="A conexão de tempo de execução ODBC usada para acessar o banco de dados."
@@ -616,244 +474,386 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC]"
+                  refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC]"
                   errorRowDisposition="FailComponent"
                   name="Saída de fonte ODBC"
                   truncationRowDisposition="FailComponent">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_atividade]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_atividade]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_atividade]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_atividade]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_atividade]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_atividade]"
                       name="id_atividade" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_responsavel]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_responsavel]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_responsavel]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_responsavel]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_responsavel]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_responsavel]"
                       name="id_responsavel" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_solicitante]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_solicitante]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_solicitante]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_solicitante]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_solicitante]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_solicitante]"
                       name="id_solicitante" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_loja]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_loja]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_loja]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_loja]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_loja]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_loja]"
                       name="id_loja" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_avaliacao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_avaliacao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]"
                       name="id_avaliacao" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[descricao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[descricao]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[descricao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[descricao]"
                       length="1500"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[descricao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[descricao]"
                       name="descricao" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[tipo]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[tipo]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[tipo]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[tipo]"
                       length="7"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[tipo]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[tipo]"
                       name="tipo" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_inicio]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_inicio]"
                       dataType="dbTimeStamp2"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_inicio]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_inicio]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_inicio]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_inicio]"
                       name="data_inicio"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_previsao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_previsao]"
                       dataType="dbTimeStamp2"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_previsao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_previsao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_previsao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_previsao]"
                       name="data_previsao"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]"
                       dataType="dbTimeStamp2"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_finalizacao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_finalizacao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[data_finalizacao]"
                       name="data_finalizacao"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[atraso]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[atraso]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[atraso]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[atraso]"
                       length="3"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[atraso]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[atraso]"
                       name="atraso" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[cod_atividade]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[cod_atividade]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[cod_atividade]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[cod_atividade]"
                       length="255"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].Columns[cod_atividade]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[cod_atividade]"
                       name="cod_atividade" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_atividade]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_atividade]"
                       dataType="i4"
                       name="id_atividade" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_responsavel]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_responsavel]"
                       dataType="i4"
                       name="id_responsavel" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_solicitante]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_solicitante]"
                       dataType="i4"
                       name="id_solicitante" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_loja]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_loja]"
                       dataType="i4"
                       name="id_loja" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_avaliacao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_avaliacao]"
                       dataType="i4"
                       name="id_avaliacao" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[descricao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[descricao]"
                       dataType="wstr"
                       length="1500"
                       name="descricao" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[tipo]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[tipo]"
                       dataType="wstr"
                       length="7"
                       name="tipo" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_inicio]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_inicio]"
                       dataType="dbTimeStamp2"
                       name="data_inicio"
                       scale="6" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_previsao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_previsao]"
                       dataType="dbTimeStamp2"
                       name="data_previsao"
                       scale="6" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_finalizacao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_finalizacao]"
                       dataType="dbTimeStamp2"
                       name="data_finalizacao"
                       scale="6" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[atraso]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[atraso]"
                       dataType="wstr"
                       length="3"
                       name="atraso" />
                     <externalMetadataColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[cod_atividade]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[cod_atividade]"
                       dataType="wstr"
                       length="255"
                       name="cod_atividade" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC]"
+                  refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC]"
                   isErrorOut="true"
                   name="Saída de Erro de Origem do Error ODBC">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_atividade]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_atividade]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_atividade]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_atividade]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_atividade]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_atividade]"
                       name="id_atividade" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_responsavel]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_responsavel]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_responsavel]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_responsavel]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_responsavel]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_responsavel]"
                       name="id_responsavel" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_solicitante]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_solicitante]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_solicitante]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_solicitante]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_solicitante]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_solicitante]"
                       name="id_solicitante" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_loja]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_loja]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_loja]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_loja]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_loja]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_loja]"
                       name="id_loja" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_avaliacao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_avaliacao]"
                       dataType="i4"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[id_avaliacao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_avaliacao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[id_avaliacao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[id_avaliacao]"
                       name="id_avaliacao" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[descricao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[descricao]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[descricao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[descricao]"
                       length="1500"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[descricao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[descricao]"
                       name="descricao" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[tipo]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[tipo]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[tipo]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[tipo]"
                       length="7"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[tipo]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[tipo]"
                       name="tipo" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_inicio]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_inicio]"
                       dataType="dbTimeStamp2"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_inicio]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_inicio]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_inicio]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_inicio]"
                       name="data_inicio"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_previsao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_previsao]"
                       dataType="dbTimeStamp2"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_previsao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_previsao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_previsao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_previsao]"
                       name="data_previsao"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_finalizacao]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_finalizacao]"
                       dataType="dbTimeStamp2"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[data_finalizacao]"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_finalizacao]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[data_finalizacao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[data_finalizacao]"
                       name="data_finalizacao"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[atraso]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[atraso]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[atraso]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[atraso]"
                       length="3"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[atraso]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[atraso]"
                       name="atraso" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[cod_atividade]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[cod_atividade]"
                       dataType="wstr"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC].ExternalColumns[cod_atividade]"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].ExternalColumns[cod_atividade]"
                       length="255"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[cod_atividade]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[cod_atividade]"
                       name="cod_atividade" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorCode]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorCode]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorColumn]"
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorColumn]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de Erro de Origem do Error ODBC].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="Destino ODBC;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Destino ODBC"
+              name="TABELA_SERVICO"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="O nome da tabela a ser procurada."
+                  expressionType="Notify"
+                  name="TableName">"public"."servico"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique o número de linhas buscado por lote."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="O número de linhas inseridas na mesma transação."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determina a alocação de tamanho de parte de colunas LOB"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="O número de segundos para aguardar pela execução de uma instrução SQL antes de retornar ao aplicativo."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código a ser usada quando não há informações de página de código disponíveis na fonte de dados."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="O método usado para inserir dados. Os valores possíveis são 'Linha por linha' ou 'Lote'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="O tipo de dados ODBC C para associação de dados numéricos."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determina como o componente associaria colunas de tipos de cadeia de caracteres (multi-)byte (ou seja, SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). As opções são: Unicode (SQL_C_WCHAR) e ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LojaBI.postgres]"
+                  connectionManagerRefId="Package.ConnectionManagers[LojaBI.postgres]"
+                  description="A conexão de tempo de execução ODBC usada para acessar o banco de dados."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC]"
+                  errorOrTruncationOperation="Inserir"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Destino do ODBC"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].Columns[id_atividade]"
+                      cachedDataType="i4"
+                      cachedName="id_atividade"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_atividade]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_atividade]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].Columns[id_loja]"
+                      cachedDataType="i4"
+                      cachedName="id_loja"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_loja]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_loja]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].Columns[id_avaliacao]"
+                      cachedDataType="i4"
+                      cachedName="id_avaliacao"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_avaliacao]"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC].Columns[id_avaliacao]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_servico]"
+                      dataType="i4"
+                      name="id_servico" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_atividade]"
+                      dataType="i4"
+                      name="id_atividade" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_avaliacao]"
+                      dataType="i4"
+                      name="id_avaliacao" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[id_loja]"
+                      dataType="i4"
+                      name="id_loja" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC].ExternalColumns[setor_solicitante]"
+                      dataType="wstr"
+                      length="50"
+                      name="setor_solicitante" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Outputs[Saída de Erro de Destino do ODBC]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Destino do ODBC"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Outputs[Saída de Erro de Destino do ODBC].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -865,14 +865,14 @@
           <paths>
             <path
               refId="Package\Tarefa Fluxo de Dados 1.Paths[Saída de Conversão de Dados]"
-              endId="Package\Tarefa Fluxo de Dados 1\Destino ODBC.Inputs[Entrada de Destino do ODBC]"
+              endId="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO.Inputs[Entrada de Destino do ODBC]"
               name="Saída de Conversão de Dados"
               startId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Outputs[Saída de Conversão de Dados]" />
             <path
               refId="Package\Tarefa Fluxo de Dados 1.Paths[Saída de fonte ODBC]"
               endId="Package\Tarefa Fluxo de Dados 1\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
               name="Saída de fonte ODBC"
-              startId="Package\Tarefa Fluxo de Dados 1\Fonte ODBC.Outputs[Saída de fonte ODBC]" />
+              startId="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA.Outputs[Saída de fonte ODBC]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -903,31 +903,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="142,42"
-          Id="Package\Tarefa Fluxo de Dados 1\Fonte ODBC"
+          Size="180,42"
+          Id="Package\Tarefa Fluxo de Dados 1\TABELA_RESERVA"
           TopLeft="87,33" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Tarefa Fluxo de Dados 1\Destino ODBC"
+          Size="177,42"
+          Id="Package\Tarefa Fluxo de Dados 1\TABELA_SERVICO"
           TopLeft="81,188" />
         <NodeLayout
           Size="182,42"
           Id="Package\Tarefa Fluxo de Dados 1\Conversão de Dados"
-          TopLeft="69,109" />
+          TopLeft="84,108" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados 1.Paths[Saída de Conversão de Dados]"
-          TopLeft="158.25,151">
+          Id="Package\Tarefa Fluxo de Dados 1.Paths[Saída de fonte ODBC]"
+          TopLeft="176,75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37"
+              EndConnector="0,33"
               Start="0,0"
-              End="0,29.5">
+              End="0,25.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -937,19 +937,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados 1.Paths[Saída de fonte ODBC]"
-          TopLeft="159,75">
+          Id="Package\Tarefa Fluxo de Dados 1.Paths[Saída de Conversão de Dados]"
+          TopLeft="172.25,150">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34"
+              EndConnector="0,38"
               Start="0,0"
-              End="0,26.5">
+              End="0,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5" />
+                    End="0,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
