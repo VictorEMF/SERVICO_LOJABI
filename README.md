@@ -10,3 +10,7 @@ Com isso houve a criação do ETL que foi feito no SQL Server Integration Servic
 Já o segundo ETL serve para a população do tabela serviço.
 
 ![CONVERSAO_RESERVA](https://github.com/VictorEMF/SERVICO_LOJABI/assets/70483515/c5bc7d36-4e02-4b14-b46d-bf7426e6c96c)
+
+Logo após isso esse ETL sofreram deploy para o SQL Server Management Studio (SSMS) onde nde haverá a criação dos JOB para atualizar o DB origem mensalmente mensalmente.
+
+![JOBS_SERVICO](https://github.com/VictorEMF/SERVICO_LOJABI/assets/70483515/91912ff5-80fb-479e-a522-235343fbce4c)
