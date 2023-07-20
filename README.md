@@ -7,3 +7,6 @@ Com isso houve a criação do ETL que foi feito no SQL Server Integration Servic
 
 ![PROJETO_CHAMADO](https://github.com/VictorEMF/SERVICO_LOJABI/assets/70483515/847f73fc-6b4d-4eea-9d15-32843ced6b19)
 
+Já o segundo ETL serve para a população do tabela serviço.
+
+![CONVERSAO_RESERVA](https://github.com/VictorEMF/SERVICO_LOJABI/assets/70483515/c5bc7d36-4e02-4b14-b46d-bf7426e6c96c)
